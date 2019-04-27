@@ -28,13 +28,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import genericfunctions.Constants;
-import testcases.CRMMenuItems;
-import webpages.CRMCompanies;
-import webpages.CRMMouse;
-import webpages.CRMPro;
-import webpages.CRMQuestionMark;
 import webpages.CRMQuickMark;
-import webpages.RedBus;
 
 public class CRMProReport {
 
