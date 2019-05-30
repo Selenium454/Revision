@@ -27,7 +27,7 @@ public static Map<String, String> getInputdata(String sheet, String testcasename
 			File path = new File(Constants.exceldata);
 			FileInputStream fis = new FileInputStream(path);//
 			XSSFWorkbook wb = new XSSFWorkbook(fis);
-			XSSFSheet sh = wb.getSheet("sheet1");
+			XSSFSheet sh = wb.getSheet(sheet);
 			int rows = sh.getLastRowNum() - sh.getFirstRowNum();
 			int col = sh.getRow(0).getLastCellNum();
 			System.out.println(rows);

@@ -28,7 +28,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import genericfunctions.Constants;
-import webpages.CRMQuickMark;
+import webpages.CRMCompanies;
 
 public class CRMProReport {
 
@@ -36,10 +36,10 @@ public class CRMProReport {
 	public ExtentHtmlReporter htmlreporter = null;
 	public ExtentReports extent = null;
 	public static ExtentTest logger = null;
-	// public CRMPro crm = null;
-	// public CRMCompanies crmcomp = null;
+	//public CRMPro crm = null;
+	 public CRMCompanies crmcomp = null;
 	// public CRMQuestionMark crmcomp = null;
-	 public CRMQuickMark crmcomp = null;
+	// public CRMQuickMark crmcomp = null;
 
 	//public CRMMouse crmcomp = null;
 
@@ -64,9 +64,9 @@ public class CRMProReport {
 	public void pageobj(Method name) {
 		logger = extent.createTest(name.getName(), name.getDeclaringClass().getName());
 		// crm = new CRMPro(driver);
-	//	 crmcomp = new CRMCompanies(driver);
+	 crmcomp = new CRMCompanies(driver);
 		// crmcomp = new CRMQuestionMark(driver);
-		 crmcomp = new CRMQuickMark(driver);
+	//	 crmcomp = new CRMQuickMark(driver);
 
 		//crmcomp = new CRMMouse(driver);
 	}
